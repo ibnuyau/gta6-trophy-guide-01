@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Leonida Ledger</h1>
+    <p class="sub">GTA VI trophy guide &amp; tracker — all 55 PlayStation 5 trophies, offline</p>
+  </div>
+  <div class="progress" id="progressBox" aria-label="Progress">
+    <div class="progress-line"><strong id="progressText">0 of 55 earned</strong><span id="progressPct">0%</span></div>
+    <div class="bar"><div class="bar-fill" id="progressBar" style="width:0%"></div></div>
+    <div class="grade-counts" id="gradeCounts"></div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="about">About &amp; sources</button>
+</nav>
+
+<section class="toolbar" id="toolbar">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="side">Side missions</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label class="grade">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="spoiler"><input id="spoilerToggle" type="checkbox"> Hide story spoilers</label>
+  <div class="file-actions">
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset</button>
+  </div>
+</section>
+
+<main class="layout">
+  <div class="main-col">
+    <section id="view-checklist" class="view">
+      <p class="hint" id="listHint"></p>
+      <ul class="trophy-list" id="trophyList"></ul>
+      <p class="empty" id="listEmpty" hidden>No trophies match these filters.</p>
+    </section>
+
+    <section id="view-roadmap" class="view" hidden>
+      <h2>Roadmap to the platinum</h2>
+      <p class="lede">Built from the official trophy descriptions alone — which story chapters and missions, which collectibles and counts, in what order. Around 200 hours at a 4-out-of-10 difficulty, one playthrough, no online trophies.</p>
+      <ol class="stages" id="roadmapStages"></ol>
+    </section>
+
+    <section id="view-missables" class="view" hidden>
+      <h2>Missable trophies</h2>
+      <p class="lede">Only one trophy is flagged missable by the published guides. Every story trophy is unmissable, and everything outside the story stays available after the credits — including the side-story finales and the 100% checklist. The game has no mission replay, so the safety net is manual saves: one at the start of every chapter and one from just before the final mission.</p>
+      <ul class="trophy-list" id="missableList"></ul>
+      <h3>Why the rest are safe</h3>
+      <p>Story trophies (12) pop as you play. Side finales, robberies, collectibles, activities and the 100% checklist all remain open after the story, under Progress, then Stats, then 100% Completion. Cheats switch trophies and saving off, so leave them off on your trophy save.</p>
+    </section>
+
+    <section id="view-about" class="view" hidden>
+      <h2>About &amp; sources</h2>
+      <p>Leonida Ledger is an offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: 1 platinum, 2 gold, 6 silver and 46 bronze, 28 of them hidden on PlayStation until earned, none of them online. It works with the network off and saves nothing anywhere but your own browser.</p>
+      <h3>Where the facts come from</h3>
+      <p>Every trophy's name, description and grade are the official text as PlayStation publishes it, as listed by Exophase and PSNProfiles — the two agreed on every name, description and grade. Each guide is written for this entry in our own words and names its sources beside it. Nothing is copied from another guide: a source is cited, never copied.</p>
+      <ul class="source-list">
+        <li><a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — Grand Theft Auto VI trophies (PS5)</a> — official names, descriptions and grades</li>
+        <li><a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — Grand Theft Auto VI trophies</a> — grades and PlayStation's progress counts</li>
+        <li><a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag — GTA 6 trophy list</a> — guide details: saves, robberies, meditation, ranges</li>
+        <li><a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">EGamers.io — GTA 6 trophy list and hardest trophies</a> — overview, difficulty and time estimates</li>
+        <li><a href="https://gtascoop.com/guides/gta-6-trophies-achievements/">GTAScoop — GTA 6 trophies &amp; achievements</a> — story structure and mission names</li>
+      </ul>
+      <h3>Honesty note</h3>
+      <p>The game released on 19 November 2026. These guides are built from the official trophy descriptions and the published guides above — they have not been checked in the game by us. Where a detail is unconfirmed (for example the exact trigger of a hidden trophy with a vague description), the guide says so rather than inventing a step. No Rockstar Games logo or official artwork is used anywhere in this guide; the look is our own.</p>
+      <h3>Your progress stays yours</h3>
+      <p>Progress is saved in this browser's localStorage only. Export downloads a JSON file you can keep or move to another browser, and Import reads it back. Nothing is sent anywhere.</p>
+    </section>
+  </div>
+
+  <aside class="detail" id="detailPane" aria-label="Trophy guide">
+    <p class="detail-empty" id="detailEmpty">Select a trophy on the left to see its guide and sources.</p>
+    <article id="detailCard" hidden>
+      <div class="detail-head">
+        <span class="medal" id="detailMedal"></span>
+        <div>
+          <h2 id="detailName"></h2>
+          <p class="official" id="detailDesc"></p>
+          <p class="meta" id="detailMeta"></p>
+        </div>
+      </div>
+      <div class="detail-body">
+        <h3>Guide</h3>
+        <p id="detailGuide"></p>
+        <h3>Sources</h3>
+        <ul class="source-list" id="detailSources"></ul>
+        <button id="detailToggle" type="button">Mark as earned</button>
+      </div>
+    </article>
+  </aside>
+</main>
+
+<footer>
+  <p>Leonida Ledger — an unofficial, open-source fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar Games. Trophy names and descriptions are shown as PlayStation publishes them. Works offline; no data leaves your browser.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
